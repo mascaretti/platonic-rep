@@ -49,7 +49,7 @@ def get_models(modelset, modality='all'):
         ]
     elif modelset == 'custom':
         llm_models = [
-            "huggyllama/llama-7b",
+            "openlm-research/open_llama_3b",
         ]
         lvm_models = [
             "vit_large_patch16_224.mae",
