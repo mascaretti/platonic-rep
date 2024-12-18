@@ -42,19 +42,11 @@ def get_models(modelset, modality='all'):
         
     elif modelset == 'test':
         llm_models = [
-            "allenai/OLMo-1B-hf",
-            "allenai/OLMo-7B-hf", 
-            "google/gemma-2b",
-            "google/gemma-7b",
-            "mistralai/Mistral-7B-v0.1",
-            "mistralai/Mixtral-8x7B-v0.1",
-            # "mistralai/Mixtral-8x22B-v0.1",
-            "NousResearch/Meta-Llama-3-8B",
-            "NousResearch/Meta-Llama-3-70B",
+            "huggyllama/llama-7b",
         ]
-        
-        lvm_models = []
-        
+        lvm_models = [
+            "vit_large_patch16_224.mae",
+        ]
     elif modelset == 'custom':
         llm_models = [
             "huggyllama/llama-7b",
